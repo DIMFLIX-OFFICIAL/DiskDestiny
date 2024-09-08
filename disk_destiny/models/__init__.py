@@ -1,7 +1,7 @@
 from .base import BaseModel
 from .KNN import KNN
-from .logistics_regression import LogisticsRegression
-from .XGBoost import XGBoost
+from .TreeClassifier import TreeClassifier
+from .RandomForest import RandomForest
 
 
-__all__ = ['BaseModel', 'KNN', 'LogisticsRegression', 'XGBoost']
+__all__ = ['BaseModel', 'KNN', 'TreeClassifier', 'RandomForest']

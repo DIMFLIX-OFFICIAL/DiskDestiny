@@ -24,15 +24,20 @@
 1. Клонируем проект с GitHub: `git clone https://github.com/DIMFLIX-OFFICIAL/disk-destiny.git`
 2. Переходим в папку с проектом: `cd disk-destiny`
 3. Устанавливаем зависимости: `poetry install`
-4. Запускаем программу: `poetry run python disk_destiny/app.py`
-
-Программа будет запускаться в терминале и предложить выбрать действие для выполнения.
+4. В папку `data/prediction` копируем нужные датасеты
+5. Запускаем программу `poetry run python disk_destiny/app.py` и следуем дальнейшим инструкциям. 
 
 > [!important]
 > Для выбора нескольких значений в списке нужно нажать клавишу 'Space'.
 > Если возможно выбрать только одно значение из списка, нужно просто нажать клавишу 'Enter'.
 
 # Разработчикам
+## Обучение моделей
+Для обучения моделей требуется скопировать тренировочные датасеты в папку `data/train`.
+Далее запустить программу `poetry run python disk_destiny/app.py` и выбрать опцию `Дообучение модели`.
+Выбираем нужную модель датасеты для обучения.
+
+## Добавление новых моделей
 Если вы хотите добавить новые модели, то вам нужно будет создать файл с именем `models/your_model.py` в корневой папке проекта. 
 
 Класс вашей модели должен наследоваться от класса `BaseModel` и реализовывать методы `train` и `predict`. Так-же у вашего класса должен быть атрибут `name` со значением типа `str`.
@@ -53,28 +58,28 @@
         <img src="https://github.com/DIMFLIX-OFFICIAL.png?size=100" width="100px;" alt=""/><br/>
         <b>Пронин Дмитрий</b>
       </a><br/>
-      <sub>Построение и оптимизация алгоритмов.<br>Разработка TUI</sub>
+      <sub>Algorithmic Designer<br>System Architect</sub>
     </td>
     <td align="center">
       <a href="https://github.com/K1rsn7">
         <img src="https://github.com/K1rsn7.png?size=100" width="100px;" alt=""/><br />
         <b>Сухоруков Кирилл</b>
       </a><br />
-      <sub>Построение алгоритмов.<br>Обучение моделей</sub>
+      <sub>ML Engineer</sub>
     </td>
 	<td align="center">
       <a href="https://github.com/AsDo001">
         <img src="https://github.com/AsDo001.png?size=100" width="100px;" alt=""/><br />
         <b>Донсков Арсений</b>
       </a><br />
-      <sub>Построение алгоритмов.<br>Обучение моделей</sub>
+      <sub>ML Engineer</sub>
     </td>
 	<td align="center">
       <a href="https://github.com/Sweepyd1">
         <img src="https://github.com/Sweepyd1.png?size=100" width="100px;" alt=""/><br />
         <b>Яшин Дмитрий</b>
       </a><br />
-      <sub>Построение алгоритмов.<br>Обучение моделей</sub>
+      <sub>Data Engineer</sub>
     </td>
   </tr>
 </table>
